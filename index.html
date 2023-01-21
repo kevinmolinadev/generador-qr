@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Generar QR</title>
 </head>
@@ -14,18 +15,17 @@
     <header class="header">
         <h1>GENERADOR DE QR ONLINE</h1>
     </header>
-    <section id="qr">
-        <div id="contenedor_qr">
-
+    <section id="contenedor_qr">
+        <div class="qr">
         </div>
     </section>
     <section id="obtenerDatos">
         <div class="contenedor">
             <form action="" id="">
-                <input type="text">
+                <input autocomplete="off" id="url" type="url" placeholder="Ingrese la URL">
             </form>
             <button id="generar">Generar QR</button>
-            <button id="descargar"><i class="fa-solid fa-down-to-line"></i></button>
+            <button id="descargar"><ion-icon  name="download-outline"></ion-icon></button>
         </div>
     </section>
     <script src="./js/app.js"></script>
