@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generar codigos QR nuenca fue tan facil? Ahora ingresa aqui donde podras generar codigos qr de la manera mas facil posible">
+    <meta name="theme-color" content="#3684c4bb">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
     integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Generar QR</title>
 </head>
@@ -30,7 +33,7 @@
     <section id="obtenerDatos">
         <div class="contenedor">
             <form action="" id="">
-                <input autocomplete="off" id="url" type="url" placeholder="Ingrese la URL">
+                <input autocomplete="off" id="url" type="url" placeholder="Ingrese la URL" required>
             </form>
             <button onclick="GenerarEnvio()" id="generar">Generar QR</button>
             <a class="descargar" id="descargar"><ion-icon name="download-outline"></ion-icon></a>
