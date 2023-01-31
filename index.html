@@ -5,16 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Generar codigos QR nuenca fue tan facil? Ahora ingresa aqui donde podras generar codigos qr de la manera mas facil posible">
-    <meta name="theme-color" content="#3684c4bb">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="icon" href="./favicon.png">
-    <link rel="apple-touch-icon" href="./favicon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Titulo -->
     <title>Generar QR</title>
+    <!-- Descripcion -->
+    <meta name="description" content="Proyecto para generar codigos qr, con javascript y uso de la libreria qrcode.js">
+    <!-- Script de la libreria QRCode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script de Iconos usados -->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- OGP -->
+    <meta property="og:title" content="Genedor QR" />
+    <meta property="og:description" content="Proyecto para generar codigos qr, con javascript y uso de la libreria qrcode.js">
+    <meta property="og:image" content="https://molinalk.github.io/generador-qr/img/imageogp.webp" />
+    <!-- Favicon y otros -->
+    <link rel="icon" href="./favicon.png">
+    <link rel="canonical" href="https://molinalk.github.io/generador-qr">
+    <link rel="apple-touch-icon" href="https://molinalk.github.io/generador-qr/img/qr.webp">
+    <meta name="theme-color" content="#3684c4bb">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -25,18 +36,22 @@
         <div id="qr" class="qr">
         </div>
         <div id="tamaño" class="content_tm">
-            <button onclick="pequeño()" class="tamañoQr">Pequeño</button>
-            <button onclick="mediano()" class="tamañoQr">Mediano</button>
-            <button onclick="grande()" class="tamañoQr grande">Grande</button>
+            <button id="pequeño" class="tamañoQr">Pequeño</button>
+            <button id="mediano" class="tamañoQr">Mediano</button>
+            <button id="grande" class="tamañoQr grande">Grande</button>
         </div>
     </section>
     <section id="obtenerDatos">
         <div class="contenedor">
-            <form action="" id="">
-                <input autocomplete="off" id="url" type="url" placeholder="Ingrese la URL" required>
+            <form id="form">
+                <input autocomplete="off" id="url" type="url" placeholder="Ingrese la URL" pattern="https?://.+"
+                    required>
+                <button id="generar">Generar QR</button>
             </form>
-            <button onclick="GenerarEnvio()" id="generar">Generar QR</button>
             <a class="descargar" id="descargar"><ion-icon name="download-outline"></ion-icon></a>
+        </div>
+        <div class="repositorio">
+            <a target="_blank" href="https://github.com/molinalk/generador-qr"><ion-icon class="enlace" name="logo-github"></ion-icon></a>
         </div>
     </section>
     <script src="./js/app.js"></script>
