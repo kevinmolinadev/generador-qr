@@ -1,5 +1,5 @@
 body {
-    background-image:url(https://rare-gallery.com/mocahbig/423623-space-Solar-System-planet-space-art-digital-art.png) ;
+    background-image:url(./space.webp) ;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -11,7 +11,6 @@ body {
 ::placeholder {
     color: white;
 }
-
 h1 {
     margin-top: 0;
     padding: 1rem;
@@ -20,7 +19,6 @@ h1 {
     border-bottom: 3px solid rgba(255, 255, 255, 0.836);
     text-align: start;
 }
-
 .header {
     font-size: 1.5rem;
     font-weight: lighter;
@@ -35,7 +33,7 @@ h1 {
     align-items: center;
 }
 .qr {
-    padding-top: 2rem;
+    margin-top: 1rem;
 }
 .content_tm{
     margin-top: 2rem;
@@ -122,6 +120,17 @@ h1 {
 ion-icon{
     font-size: 2rem;
 }
+.repositorio{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.enlace{
+    text-align: center;
+    font-size: 2.6rem;
+    color: white;
+    padding: 2rem;
+}
 @media (max-width:450px){
     h1 {
         text-align: center;
@@ -145,7 +154,7 @@ ion-icon{
         align-items: center;
     }
     .qr {
-        padding-top: 2rem;
+        margin-top: 1rem;
     }
     .content_tm{
         margin-top: 2rem;
@@ -255,7 +264,7 @@ ion-icon{
         align-items: center;
     }
     .qr {
-        padding-top: 2rem;
+        margin-top: 1rem;
     }
     .content_tm{
         margin-top: 2rem;
@@ -366,7 +375,7 @@ ion-icon{
         align-items: center;
     }
     .qr {
-        padding-top: 2rem;
+        margin-top: 1rem;
     }
     .content_tm{
         margin-top: 2rem;
@@ -477,7 +486,7 @@ ion-icon{
         align-items: center;
     }
     .qr {
-        padding-top: 2rem;
+        margin-top: 1rem;
     }
     .content_tm{
         margin-top: 2rem;
