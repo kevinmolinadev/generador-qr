@@ -1,4 +1,4 @@
-# GENERADOR DE QR :D
+# GENERADOR DE CODIGOS QR 
 Creando una pagina que genera qr
 
 #Tecnologias:
@@ -12,3 +12,5 @@ JS
 #Libreria:
 
 QRCode.js
+
+Terminamos el proyecto :D
