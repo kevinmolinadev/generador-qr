@@ -14,3 +14,5 @@ JS
 QRCode.js
 
 Terminamos el proyecto :D
+
+[Generador QR](https://molinalk.github.io/generador-qr)
